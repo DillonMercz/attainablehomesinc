@@ -28,6 +28,57 @@
     <script defer="" referrerpolicy="origin" src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyQXR0YWluYWJsZSUyMEhvbWVzJTIwLSUyMEFmZm9yZGFibGUlMjBIb21lcyUyMEFuZCUyMEJ1aWxkaW5nJTIwU29sdXRpb25zJTIyJTJDJTIyeCUyMiUzQTAuMDExNzY1NzMwNDY2MzM5NDQxJTJDJTIydyUyMiUzQTEzNjYlMkMlMjJoJTIyJTNBNzY4JTJDJTIyaiUyMiUzQTYxNyUyQyUyMmUlMjIlM0ExMzY2JTJDJTIybCUyMiUzQSUyMmh0dHBzJTNBJTJGJTJGYXR0YWluYWJsZWhvbWVzaW5jLmNvbSUyRmluZGV4Lmh0bWwlMjIlMkMlMjJyJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZhdHRhaW5hYmxlaG9tZXNpbmMuY29tJTJGJTIyJTJDJTIyayUyMiUzQTI0JTJDJTIybiUyMiUzQSUyMlVURi04JTIyJTJDJTIybyUyMiUzQTQyMCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q="></script>
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce="295bb376-f4a4-4f5d-a11d-88e3375669c3"></script>
 </head>
+<style>
+    /* FAQ Accordion Styles */
+        .faq-section {
+            padding: 40px 0;
+        }
+
+        .faq-heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .faq-accordion {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #3D424A;
+            color: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.2em;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            background-color: #FFA500;
+            color: #000;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <nav class="navbar navbar-expand-lg  ftco-navbar-light">
@@ -110,16 +161,45 @@
             </div>
         </div>
     </section>
+    <section class="faq-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up">
+                    <h2 class="mb-4">Our Work</h2>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <img src="https://i.imgur.com/V1ZlDGZ.jpg" alt="Image 1" style="width: 300px; height: 200px; margin: 10px;">
+                    <img src="https://i.imgur.com/ojnbP0n.jpg" alt="Image 2" style="width: 300px; height: 200px; margin: 10px;">
+                    <img src="https://i.imgur.com/ayPPGYZ.jpg" alt="Image 3" style="width: 300px; height: 200px; margin: 10px;">
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="gallery.html">
+                        <button class="btn btn-primary p-4 py-3" style="padding: 10px 20px; font-size: 16px;">View More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 heading-section text-center mb-5 aos-init aos-animate" data-aos="fade-up">
+                    <h2 class="mb-4">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <div class="faq-accordion">
+                <!-- FAQ items will be dynamically inserted here using JavaScript -->
+            </div>
+            <center><a href="faqs.html">
+                    <button class="btn btn-primary p-4 py-3" style="padding: 10px 20px; font-size: 16px;">View More</button>
+                </a>
+        </div>
+    </section>
     <section class="ftco-appointment img" style="background-image:url(images/xbg_2.jpg.pagespeed.ic.ybfVuIBiJn.webp)">
         <div class="overlay"></div>
         <center>
-            <div class="container-xl" style="
-    align-content: center;
-    align-items: center;
-">
-                <div id="contact" class="" style="
-    width: 110%;
-">
+            <div class="container-xl" style="align-content: center;align-items: center;">
+                <div id="contact" class="" style="width: 105%;">
                     <div class="aos-animate aos-init" data-aos="fade-up" data-aos-delay="100">
                         <form action="#" class="appointment aside-stretch">
                             <h2 class="mb-4 appointment-head">Contact Us:</h2>
@@ -130,7 +210,7 @@
                             <br>
                             <br>
                             <h3>Rami Zvida, MGR</h3>
-<p>Email: Ramiz4006@gmail.com</p>
+                            <p>Email: Ramiz4006@gmail.com</p>
                             <p>Phone: 954-646-8882</p>
                         </form>
                     </div>
@@ -139,6 +219,64 @@
         </center>
     </section>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const faqAccordion = document.querySelector(".faq-accordion");
+
+        // FAQ data with questions and answers
+        const faqData = [{
+                question: "Is the Fully Integrated Structural Building System (FISBS) eco-friendly?",
+                answer: "Yes, the Fully Integrated Structural Building System (FISBS) is designed to be environmentally friendly. It is a completely GREEN construction solution with high energy efficiency, non-combustible materials, and a long life-cycle. The system's energy efficiency and sustainable materials contribute to reducing the environmental impact of the buildings constructed using this system."
+            },
+            {
+                question: "What wind loads can the Fully Integrated Structural Building System (FISBS) withstand?",
+                answer: "The Fully Integrated Structural Building System (FISBS) is designed to meet or exceed the Florida Building Code wind loads exceeding 175MPH when used in combination with the multi-stemmed pre-stressed concrete floor. The Fully Integrated Structural Building System (FISBS) is designed to meet or exceed the HUD wind loads exceeding 130MPH when used in a manufactured home application. Its structural integrity and robust design allows it to withstand high wind forces, making it suitable for areas prone to severe weather conditions such as hurricanes and storms."
+            },
+            {
+                question: "Can the Fully Integrated Structural Building System (FISBS) be transported without a trailer or crane?",
+                answer: "Yes, the Fully Integrated Structural Building System (FISBS) is designed to be easily transported without the need of a trailer and easily setup without the need of a crane. The multi-stemmed pre-stressed concrete floor component allows for efficient transportation, making it convenient for building projects located in difficult to access areas."
+            },
+            // Add more FAQ items as needed
+        ];
+
+
+        // Function to create and append FAQ items
+        function createFAQItem(question, answer) {
+            const faqItem = document.createElement("div");
+            faqItem.classList.add("faq-item");
+
+            const questionDiv = document.createElement("div");
+            questionDiv.classList.add("faq-question");
+            questionDiv.textContent = question;
+
+            const answerDiv = document.createElement("div");
+            answerDiv.classList.add("faq-answer");
+            answerDiv.textContent = answer;
+
+            faqItem.appendChild(questionDiv);
+            faqItem.appendChild(answerDiv);
+
+            return faqItem;
+        }
+
+        // Loop through the FAQ data and create accordion items
+        for (const { question, answer } of faqData) {
+            const faqItem = createFAQItem(question, answer);
+            faqAccordion.appendChild(faqItem);
+        }
+
+        // Add click event listener to toggle accordion items
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+            const questionDiv = item.querySelector(".faq-question");
+
+            questionDiv.addEventListener("click", () => {
+                item.classList.toggle("active");
+            });
+        });
+    });
+    </script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js+aos.js+google-map.js+main.js.pagespeed.jc.DSS7MIsKP5.js"></script>
     <script>
